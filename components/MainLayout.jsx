@@ -1,8 +1,5 @@
 "use client";
 import MainHeader from "./MainHeader";
-import FinancialPlanning from "./FinancialPlanning";
-import CareerOpportunities from "./CareerOpportunities";
-import FindScholarships from "./FindScholarships";
 import { AiOutlineHome } from "react-icons/ai";
 import { FaRegMoneyBillAlt } from "react-icons/fa";
 import { FaRegLightbulb } from "react-icons/fa";
@@ -29,15 +26,11 @@ const MainLayout = ({ children }) => {
             </li>
             <li className="flex justify-start items-center hover:bg-gray-100 rounded-xl p-2">
               <FaRegMoneyBillAlt className="mr-2" />
-              <Link href="/FinancialPlanning">Financial Planning</Link>
-            </li>
-            <li className="flex justify-start items-center hover:bg-gray-100 rounded-xl p-2">
-              <FaRegLightbulb className="mr-2" />
-              <Link href="/CareerOpportunities">Career Opportunities</Link>
+              <Link href="/financial-planning">Financial Planning</Link>
             </li>
             <li className="flex justify-start items-center hover:bg-gray-100 rounded-xl p-2">
               <LuGraduationCap className="mr-2" />
-              <Link href="/FindScholarships">Find Scholarships</Link>
+              <Link href="/find-scholarships">Find Scholarships</Link>
             </li>
             <li className="flex justify-start items-center hover:bg-gray-100 rounded-xl p-2">
               <AiOutlineInfo className="mr-2" />
