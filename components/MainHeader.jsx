@@ -8,13 +8,12 @@ const MainHeader = () => {
    const { toggle } = useContext(MenuContext);
 
    return (
-      <div className="bg-white flex justify-between items-center px-4 h-12 mb-4">
-         <div>Welcome to FirstGenesis</div>
-           <div className="flex justify-center items-center gap-3">
-            <div onClick={toggle} className="lg:visible">
+      <div className="bg-white flex items-center px-4 h-12 mb-4">
+            <div onClick={toggle} className="lg:invisible">
                <FaBars className="cursor-pointer" />
             </div>
-         </div>
+
+         <div className="flex-1 text-center">Welcome to FirstGenesis</div>
       </div>
    );
 };

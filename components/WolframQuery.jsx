@@ -3,6 +3,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { VscSend } from "react-icons/vsc";
+import { SiWolfram } from "react-icons/si";
 
 const WolframQuery = () => {
   const [query, setQuery] = useState("");
@@ -24,22 +25,50 @@ const WolframQuery = () => {
     }
   };
 
+  const renderResult = (result) => {
+    if (!result) return null;
+
+    const lines = result.split('\n').filter(line => line.trim() !== '');
+    return lines.map((line, index) => {
+      if (line.startsWith('image:')) {
+        const imageUrl = line.split('image: ')[1];
+        return <img key={index} src={imageUrl} alt={`Result image ${index}`} />;
+      }
+      if (line.startsWith('Wolfram Language code:')){
+        return;
+      }
+      return <p key={index}>{makeLinksClickable(line)}</p>;
+    });
+  };
+
+  const makeLinksClickable = (text) => {
+    const urlPattern = /(https?:\/\/[^\s]+)/g;
+    return text.split(urlPattern).map((part, index) =>
+      urlPattern.test(part) ? (
+        <a className="underline text-blue-500" key={index} href={part} target="_blank" rel="noopener noreferrer">{part}</a>
+      ) : (
+        part
+      )
+    );
+  };
+
   return (
-    <div className="bg-gray-300 w-full rounded-lg min-h-screen text-black">
+    <div className="bg-gray-300 w-full rounded-lg min-h-screen text-black">      
+      <div className="flex justify-center items-center p-2"><SiWolfram className="h-10 w-10"/></div>
       <h1 className="flex justify-center text-2xl font-bold">Ask WolframAlpha</h1>
+      <br></br>
       <form className="flex justify-start" onSubmit={handleSubmit}>
         <input
-        className="bg-gray-200 rounded-md p-2"
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          class="placeholder:italic placeholder:text-black"
-          placeholder="Enter your query"
+          className="placeholder:italic placeholder:text-slate-400 w-full bg-gray-200 rounded-md p-2"
+          placeholder='Try "time to pay $1200 credit card" '
         />
         <button className="bg-gray-200 rounded-md p-3 " type="submit"><VscSend /></button>
       </form>
       {error && <p>Error: {error}</p>}
-      {result && <p>Result: {result}</p>}
+      {result && <div>{renderResult(result)}</div>}
     </div>
   );
 };

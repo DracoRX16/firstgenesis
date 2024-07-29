@@ -1,8 +1,9 @@
 import React from 'react'
+import ExpenseTracker from '@/components/ExpenseTracker'
 
 const FinancialPlanning = () => {
   return (
-    <div>FinancialPlanning</div>
+    <div><ExpenseTracker/></div>
   )
 }
 

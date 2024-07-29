@@ -1,11 +1,7 @@
-import WolframQuery from "@/components/WolframQuery";
-import Layout from "../components/MainLayout";
-import Link from "next/link";
-
 export default function Home() {
   return (
     <div>
-      <WolframQuery />
+      
     </div>
   );
 }

@@ -2,9 +2,9 @@
 import MainHeader from "./MainHeader";
 import { AiOutlineHome } from "react-icons/ai";
 import { FaRegMoneyBillAlt } from "react-icons/fa";
-import { FaRegLightbulb } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import { AiOutlineInfo } from "react-icons/ai";
+import { SiWolfram } from "react-icons/si";
 import Link from "next/link";
 import React, { useContext } from "react";
 import { MenuContext } from "@/context/MenuContext";
@@ -23,6 +23,10 @@ const MainLayout = ({ children }) => {
             <li className="flex justify-start items-center hover:bg-gray-100 rounded-xl p-2">
               <AiOutlineHome className="mr-2" />
               <Link href="/">Home</Link>
+            </li>
+            <li className="flex justify-start items-center hover:bg-gray-100 rounded-xl p-2">
+              <SiWolfram className="mr-2" />
+              <Link href="/wolframalpha">Ask WolframAlpha</Link>
             </li>
             <li className="flex justify-start items-center hover:bg-gray-100 rounded-xl p-2">
               <FaRegMoneyBillAlt className="mr-2" />
