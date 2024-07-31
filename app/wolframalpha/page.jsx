@@ -3,7 +3,7 @@ import WolframQuery from '@/components/WolframQuery'
 
 const WolframAlpha = () => {
   return (
-    <div><WolframQuery /></div>
+    <div className='bg-white rounded-lg mx-4 p-4'><WolframQuery /></div>
   )
 }
 

@@ -1,10 +1,10 @@
 import React from 'react'
 import ExpenseTracker from '@/components/ExpenseTracker'
 
-const FinancialPlanning = () => {
+const Expense = () => {
   return (
     <div><ExpenseTracker/></div>
   )
 }
 
-export default FinancialPlanning
+export default Expense

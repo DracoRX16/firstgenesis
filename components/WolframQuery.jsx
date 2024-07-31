@@ -53,7 +53,7 @@ const WolframQuery = () => {
   };
 
   return (
-    <div className="bg-gray-300 w-full rounded-lg min-h-screen text-black">      
+    <div className="min-h-screen text-black">      
       <div className="flex justify-center items-center p-2"><SiWolfram className="h-10 w-10"/></div>
       <h1 className="flex justify-center text-2xl font-bold">Ask WolframAlpha</h1>
       <br></br>
@@ -62,10 +62,10 @@ const WolframQuery = () => {
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          className="placeholder:italic placeholder:text-slate-400 w-full bg-gray-200 rounded-md p-2"
+          className="placeholder:italic placeholder:text-slate-400 outline outline-black w-full bg-gray-200 rounded-md p-2"
           placeholder='Try "time to pay $1200 credit card" '
         />
-        <button className="bg-gray-200 rounded-md p-3 " type="submit"><VscSend /></button>
+        <button className="bg-gray-200 outline outline-black rounded-md p-3 " type="submit"><VscSend /></button>
       </form>
       {error && <p>Error: {error}</p>}
       {result && <div>{renderResult(result)}</div>}
