@@ -87,7 +87,7 @@ const ExpenseTracker = () => {
           {
             label: "Total Expense",
             data: totals,
-            borderColor: "rgba(75, 192, 192, 1)",
+            borderColor: "rgba(255, 99, 132, 1)",
             borderWidth: 1,
             pointBackgroundColor: "rgba(255, 99, 132, 1)",
             pointBorderColor: "rgba(255, 99, 132, 1)",

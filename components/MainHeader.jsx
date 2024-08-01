@@ -11,7 +11,7 @@ const MainHeader = () => {
   const { toggle } = useContext(MenuContext);
 
   return (
-    <div className="bg-gradient-to-b from-gray-400 to-gray-200 flex items-center justify-between px-4 h-14 mb-4 rounded-lg">
+    <div className="bg-gradient-to-b from-violet-300 to-gray-200 flex items-center justify-between px-4 h-14 mb-4 rounded-lg">
       <div onClick={toggle} className="lg:invisible">
         <FaBars className="cursor-pointer" />
       </div>

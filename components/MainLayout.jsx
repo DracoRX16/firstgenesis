@@ -10,7 +10,7 @@ const MainLayout = ({ children }) => {
   const isHomePage = pathname === "/";
 
   return (
-    <div className="bg-gradient-to-b from-gray-200 to-gray-400 w-full min-h-screen text-black">
+    <div className="bg-gradient-to-b from-gray-200 to-violet-300 w-full min-h-screen text-black">
       <MainHeader />
 
       {!isHomePage && (
@@ -21,17 +21,17 @@ const MainLayout = ({ children }) => {
       )}
       
       {isHomePage &&(
-      <div className="flex flex-initial inline-block flex-row items-center justify-between mt-8 relative">
-        <NavBar/>
-        
-          <div className="flex justify-center text-center mt-8 ml-auto mr-auto">
-            <p className="text-2xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-              Empowering <br /> First-Generation Students, <br /> With First
-              Class Finances
-            </p>
-          </div>
-        <div />
-      </div>
+      <div className="relative mt-8">
+    <div className="fixed top-14 left-0 w-full z-10">
+        <NavBar />
+    </div>
+    <div className="flex flex-col items-center justify-center mt-16">
+        <p className="text-2xl font-bold tracking-tight text-indigo-950 sm:text-5xl text-center">
+            Empowering <br /> First-Generation Students, <br /> With First Class Finances
+        </p>
+    </div>
+</div>
+
       )}
       
       {isHomePage && (
