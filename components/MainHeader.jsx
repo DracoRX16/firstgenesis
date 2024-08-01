@@ -19,7 +19,7 @@ const MainHeader = () => {
       <div className="flex-1 flex justify-center items-center">
         <Link href="/">
           <div className="relative p-2">
-            <div className="absolute inset-0 rounded-full bg-gradient-to-l from-green-400 to-blue-400 filter blur opacity-100"></div>
+            <div className="absolute inset-0 rounded-full bg-gradient-to-l from-zinc-600 to-violet-950 filter blur opacity-75"></div>
             <div className="relative z-10 rounded-full bg-gray-900 p-2">
               <Logo />
             </div>

@@ -3,8 +3,8 @@ import { FaGithub } from "react-icons/fa";
 
 const About = () => {
   return (
-    <div className="bg-white rounded-lg mx-4 p-4">
-      <h1 className="text-2xl font-bold pt-2 pb-4">About</h1>
+    <div className="bg-violet-200 outline outline-violet-400 rounded-lg mx-4 p-4">
+      <h1 className="text-2xl font-bold pt-2 pb-4 text-indigo-950">About</h1>
 
       <p>
         Welcome to FirstGenesis, a dedicated platform for first-generation,

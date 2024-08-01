@@ -14,28 +14,28 @@ const NavBar = () => {
     const { open } = useContext(MenuContext);
   return (
     <aside
-          className={`bg-white rounded-lg overflow-hidden transition-all duration-200 ${
+          className={`bg-violet-200 rounded-lg outline outline-violet-400 overflow-hidden transition-all duration-200 ${
             open ? "w-60 p-4" : "w-0"
           } lg:w-60 lg:p-4 `}
         >
           <ul>
-            <li className="flex justify-start items-center hover:bg-gray-100 rounded-xl p-2">
+            <li className="flex justify-start items-center hover:bg-violet-400 rounded-xl p-2">
               <AiOutlineHome className="mr-2" />
               <Link href="/">Home</Link>
             </li>
-            <li className="flex justify-start items-center hover:bg-gray-100 rounded-xl p-2">
+            <li className="flex justify-start items-center hover:bg-violet-400 rounded-xl p-2">
               <SiWolfram className="mr-2" />
               <Link href="/wolframalpha">Ask WolframAlpha</Link>
             </li>
-            <li className="flex justify-start items-center hover:bg-gray-100 rounded-xl p-2">
+            <li className="flex justify-start items-center hover:bg-violet-400 rounded-xl p-2">
               <FaRegMoneyBillAlt className="mr-2" />
               <Link href="/expense-tracker">Expense Tracker</Link>
             </li>
-            <li className="flex justify-start items-center hover:bg-gray-100 rounded-xl p-2">
+            <li className="flex justify-start items-center hover:bg-violet-400 rounded-xl p-2">
               <LuGraduationCap className="mr-2" />
               <Link href="/find-scholarships">Find Scholarships</Link>
             </li>
-            <li className="flex justify-start items-center hover:bg-gray-100 rounded-xl p-2">
+            <li className="flex justify-start items-center hover:bg-violet-400 rounded-xl p-2">
               <AiOutlineInfo className="mr-2" />
               <Link href="/about">About</Link>
             </li>

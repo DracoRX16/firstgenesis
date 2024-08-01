@@ -39,9 +39,9 @@ const MainLayout = ({ children }) => {
           <div class="relative flex justify-center items-center text-center">
             <Logo2 />
             <div className="absolute w-full max-w-lg h-full max-h-lg">
-              <div class="absolute inset-x-0 top-0 w-72 h-72 bg-cyan-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
-              <div class="absolute inset-x-0 bottom-0  w-72 h-72 bg-green-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blobLeft animation-delay-4000"></div>
-              <div class="absolute bottom-0 right-0  w-72 h-72 bg-emerald-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-8000"></div>
+              <div class="absolute inset-x-0 top-0 w-72 h-72 bg-fuchsia-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+              <div class="absolute inset-x-0 bottom-0  w-72 h-72 bg-purple-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blobLeft animation-delay-4000"></div>
+              <div class="absolute bottom-0 right-0  w-72 h-72 bg-rose-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-8000"></div>
             </div>
           </div>
         </main>

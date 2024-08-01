@@ -106,7 +106,7 @@ const ExpenseTracker = () => {
 
   return (
     <div className="p-4">
-      <h2 className="text-2xl font-bold mb-4">Expense Tracker</h2>
+      <h2 className="text-2xl font-bold mb-4 text-indigo-950">Expense Tracker</h2>
       <form onSubmit={handleAddExpense} className="mb-4">
         <div className="flex gap-2 mb-2">
           <input
@@ -114,27 +114,27 @@ const ExpenseTracker = () => {
             value={name}
             onChange={(e) => setName(e.target.value)}
             placeholder="Expense name"
-            className="rounded-lg p-2 flex-1"
+            className="bg-violet-100 outline outline-violet-400 rounded-lg p-2 flex-1"
           />
           <input
             type="number"
             value={cost}
             onChange={(e) => setCost(e.target.value)}
             placeholder="Cost per unit"
-            className="rounded-lg p-2"
+            className="bg-violet-100 outline outline-violet-400 rounded-lg p-2"
           />
           <input
             type="number"
             value={quantity}
             onChange={(e) => setQuantity(e.target.value)}
             placeholder="Quantity"
-            className="rounded-lg p-2"
+            className="bg-violet-100 outline outline-violet-400 rounded-lg p-2"
           />
           <input
             type="date"
             value={date}
             onChange={(e) => setDate(e.target.value)}
-            className="rounded-lg p-2"
+            className="bg-violet-100 outline outline-violet-400 rounded-lg p-2"
           />
           <button type="submit" className="rounded-lg bg-black text-white p-2">
             <BsPlusCircle />
@@ -160,7 +160,7 @@ const ExpenseTracker = () => {
           </li>
         ))}
       </ul>
-      <div className="font-bold">
+      <div className="font-bold text-indigo-950">
         Total: $
         {totalExpenses().toFixed(2)}
       </div>
@@ -172,7 +172,7 @@ const ExpenseTracker = () => {
         Clear
       </button>
       <div className="mt-8">
-        <h2 className="text-xl font-bold mb-4">Expenses Chart</h2>
+        <h2 className="text-xl font-bold mb-4 text-indigo-950">Expenses Chart</h2>
         <canvas ref={chartRef}></canvas>
       </div>
     </div>
