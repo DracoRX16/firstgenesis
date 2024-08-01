@@ -2,7 +2,7 @@
 
 ## Instalation
 
-Instance is available at [https://firstgenesis.vercel.app/](firstgenesis.vercel.app)
+Instance is available at [https://firstgenesis.vercel.app/](https://firstgenesis.vercel.app/)
 
 1. Clone the repo
 2. cd to /firstgenesis
