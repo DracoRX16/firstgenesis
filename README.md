@@ -1,8 +1,12 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# FirstGenesis
 
-## Getting Started
+## Instalation
 
-First, run the development server:
+Instance is available at [https://firstgenesis.vercel.app/](firstgenesis.vercel.app)
+
+1. Clone the repo
+2. cd to /firstgenesis
+3. run the development server:
 
 ```bash
 npm run dev
@@ -16,21 +20,34 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Inspiration
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The inspiration for FirstGenesis came from recognizing the challenges faced by First-Generation low-income students, especially when it comes to managing finances.. FirstGenesis aims to provide resources to aid in financial planning and scholarship searches.
 
-## Learn More
+## What it does
 
-To learn more about Next.js, take a look at the following resources:
+FirstGenesis offers a suite of tools designed to help students:
+1. WolframAlpha Integration: Provides powerful computational intelligence for advanced queries and calculations.
+2. Expense Tracker: Allows users to log, manage, and visualize their daily expenses with ease, tracking costs and viewing historical data.
+3. Scholarship Finder: Provides users with a list of available scholarships 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## How we built it
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+FirstGenesis was developed using Next.js at the frontend and backend and Tailwind CSS for styling. The Wolfram|Alpha LLM API was integrated using axios to provide powerful computational intelligence. Chart.js was used to display data. The project was primarily coded using javascript and using Visual Studio Code as the IDE. GitHub was used for version control. Finally the project was deployed using Vercel.
 
-## Deploy on Vercel
+## Challenges we ran into
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Participating in my first hackathon and working on my first project with a deadline presented me with unique challenges. As the sole member of my team, I had to manage all aspects of development on my own. Creating a responsive design, integrating external APIs like WolframAlpha, fixing bugs, and maintaining a smooth user experience were all significant hurdles that I had to face.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Accomplishments that we're proud of
+
+- As the sole member, I was proud that I was able to complete the project within the deadline.
+- Successfully integrating Wolfram|Alpha LLM API into the application.
+
+## What we learned
+
+Learnt to build a modern web application using Next.js and Tailwind CSS. Using React to manage states. Using axios to integrate external APIs.
+
+## What's next for FirstGenesis
+
+I would like to include new features like User Authentication, College Search, Opportunity Search, Discussion Board and Improved design in the future.
