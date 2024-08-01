@@ -28,7 +28,7 @@ const MainLayout = ({ children }) => {
           <div className="flex flex-col items-center justify-center mt-16">
             <p className="text-2xl font-bold tracking-tight text-indigo-950 sm:text-5xl text-center">
               Empowering <br /> First-Generation Students, <br /> With First
-              Class Finances
+              Class Solutions
             </p>
           </div>
         </div>
