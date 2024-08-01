@@ -93,7 +93,7 @@ const MainLayout = ({ children }) => {
                   <a href="/about" className="cursor-pointer hover:underline"> And Much More To Be Added Soon </a>
                   </dt>
                   <dd class="mt-2 text-base leading-7 text-gray-600">
-                    Stay tuned for exciting updates! We're continuously working
+                    Stay tuned for exciting updates! We&apos;re continuously working
                     on adding new features and improvements to enhance your
                     experience and provide even more valuable resources and
                     tools for your needs.
