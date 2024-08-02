@@ -4,9 +4,9 @@
 
 Instance is available at [https://firstgenesis.vercel.app/](https://firstgenesis.vercel.app/)
 
-1. Clone the repo
-2. cd to /firstgenesis
-3. run the development server:
+1. ```bash https://github.com/DracoRX16/firstgenesis.git ```
+2. ```bash cd firstgenesis ```
+3. Run the development server:
 
 ```bash
 npm run dev
