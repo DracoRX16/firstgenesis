@@ -50,4 +50,4 @@ Learnt to build a modern web application using Next.js and Tailwind CSS. Using R
 
 ## What's next for FirstGenesis
 
-I would like to include new features like User Authentication, College Search, Opportunity Search, Discussion Board and Improved design in the future.
+I would like to include new features like User Authentication, College Search, Opportunity Search, Discussion Board and Improved UI in the future.
